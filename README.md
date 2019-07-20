@@ -11,7 +11,9 @@
 ## 在docker的jetty容器中运行
 
 ```
-docker run -it --rm  -v /d/Jetty/Jetty-distribution-9.4.19.v20190610/webapps:/var/lib/jetty/webapps --name  my-jetty -p 80:8080 jetty
+docker run -it --rm --name  my-jetty -p 80:8080 \
+-v /d/Jetty/Jetty-distribution-9.4.19.v20190610/webapps:/var/lib/jetty/webapps \
+jetty
 ```
 # Issues
 
